@@ -13,6 +13,11 @@
   - 목표는 커뮤니티가 접근성 높은 디자인 시스템을 구축하는 데 사용할 수 있는 충분한 지원을 하는 오픈 소스 컴포넌트 라이브러리를 만드는 것
   - Accessible / Unstyled / Opened / Uncontrolled / Developer experience / Incremental adoption
 
+  - [Dark mode(shadcn) / toggle button](https://ui.shadcn.com/docs/dark-mode/next)
+  - [Dropdown Menu](https://ui.shadcn.com/docs/components/dropdown-menu)
+  
+
+
 ## Next.js 13 
 
 ### [route groups](https://nextjs.org/docs/app/building-your-application/routing/colocation#route-groups)
