@@ -31,3 +31,8 @@
 - Node.js / TypeScript ORM
 - 직관적인 데이터 모델, 마이그레이션 자동화, 타입 세이프, 자동 완성
 - prisma studio: 데이터를 브라우저 상에서 편하게 확인하고 편집할 수 있는 GUI 도구
+
+## [upload thing](https://uploadthing.com/)
+
+- Next.js 를 위한 파일 업로드
+- 프로젝트당 2GB까지 무료
