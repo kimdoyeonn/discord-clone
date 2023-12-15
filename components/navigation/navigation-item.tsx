@@ -2,6 +2,7 @@
 
 import Image from 'next/image';
 import { useParams, useRouter } from 'next/navigation';
+import { useEffect, useState } from 'react';
 
 import { cn } from '@/lib/utils';
 import { ActionTooltip } from '../action-tooltip';
@@ -13,12 +14,22 @@ interface NavigationItemProps {
 }
 
 export const NavigationItem = ({ id, imageUrl, name }: NavigationItemProps) => {
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
   const params = useParams();
   const router = useRouter();
 
   const onClick = () => {
     router.push(`/servers/${id}`);
   };
+
+  if (!isMounted) {
+    return null;
+  }
 
   return (
     <ActionTooltip side='right' align='center' label={name}>

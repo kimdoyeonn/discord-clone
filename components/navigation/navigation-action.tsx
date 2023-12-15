@@ -1,12 +1,22 @@
 'use client';
 
 import { Plus } from 'lucide-react';
+import { useEffect, useState } from 'react';
 
 import { ActionTooltip } from '@/components/action-tooltip';
 import { useModal } from '@/hooks/use-modal-store';
 
 export const NavigationAction = () => {
+  const [isMounted, setIsMounted] = useState(false);
   const { onOpen } = useModal();
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
+  if (!isMounted) {
+    return null;
+  }
 
   return (
     <div>
