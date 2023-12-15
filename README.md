@@ -25,3 +25,9 @@
 ## [clerk](https://clerk.com/)
 
 - 사용자 인증 및 사용자 관리 기능을 빠르게 구현
+
+## [prisma](https://www.prisma.io/)
+
+- Node.js / TypeScript ORM
+- 직관적인 데이터 모델, 마이그레이션 자동화, 타입 세이프, 자동 완성
+- prisma studio: 데이터를 브라우저 상에서 편하게 확인하고 편집할 수 있는 GUI 도구
