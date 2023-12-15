@@ -2,6 +2,11 @@
 
 | [Fullstack Discord Clone: Next.js 13, React, Socket.io, Prisma, Tailwind, MySQL | Full Course 2023](https://www.youtube.com/watch?v=ZbX4Ok9YX94)
 
+## Features I want to add
+
+- [ ] 메인 프로필과 서버 별 프로필을 별도로 설정
+
+
 ## [shadcn](https://ui.shadcn.com/docs)
 
 - Radix UI와 Tailwind CSS를 사용하여 만든 재사용가능한 컴포넌트
