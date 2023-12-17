@@ -5,6 +5,7 @@
 ## Features I want to add
 
 - [ ] 메인 프로필과 서버 별 프로필을 별도로 설정
+- [ ] 첫 화면에서 로그아웃 버튼
 
 
 ## [shadcn](https://ui.shadcn.com/docs)
