@@ -9,7 +9,7 @@ import { NavigationAction } from '@/components/navigation/navigation-action';
 import { NavigationItem } from '@/components/navigation/navigation-item';
 import { ModeToggle } from '@/components/mode-toggle';
 
-const NavigationSidebar = async () => {
+export const NavigationSidebar = async () => {
   const profile = await currentProfile();
 
   if (!profile) {
@@ -51,5 +51,3 @@ const NavigationSidebar = async () => {
     </div>
   );
 };
-
-export default NavigationSidebar;
