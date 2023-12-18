@@ -21,7 +21,7 @@ export const NavigationAction = () => {
   return (
     <div>
       <ActionTooltip side='right' align='center' label='Add a server'>
-        <button
+        <div
           onClick={() => onOpen('createServer')}
           className='group flex items-center'
         >
@@ -31,7 +31,7 @@ export const NavigationAction = () => {
               size={25}
             />
           </div>
-        </button>
+        </div>
       </ActionTooltip>
     </div>
   );

@@ -1,7 +1,7 @@
 import { SignIn } from '@clerk/nextjs';
 
 const Page = () => {
-  return <SignIn></SignIn>;
+  return <SignIn />;
 };
 
 export default Page;
