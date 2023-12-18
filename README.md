@@ -47,3 +47,7 @@
 
 - 단순화된 Flux 원리를 사용하는 작고 빠르고 확장가능한 베어본 상태 관리 솔루션
 - [Flux](https://haruair.github.io/flux/docs/overview.html): 대규모 애플리케이션에서 데이터 흐름을 일관성 있게 관리함으로써 예측가능성을 높이기 위해 사용하는 디자인 패턴 / MVC 패턴의 단점을 보완하기 위해 등장 / 데이터를 단방향으로 관라하기 위해 제안된 패턴
+
+## [socket.io](https://socket.io/)
+
+- socket.io / socket.io-client: 서버용, 클라이언트용
