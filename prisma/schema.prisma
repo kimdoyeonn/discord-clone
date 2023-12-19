@@ -88,7 +88,7 @@ model Channel {
   server   Server @relation(fields: [serverId], references: [id], onDelete: Cascade)
 
   createdAt DateTime @default(now())
-  udpatedAt DateTime @updatedAt
+  updatedAt DateTime @updatedAt
 
   messages Message[]
 
@@ -111,7 +111,7 @@ model Message {
   deleted Boolean @default(false)
 
   createdAt DateTime @default(now())
-  udpatedAt DateTime @updatedAt
+  updatedAt DateTime @updatedAt
 
   @@index([channelId])
   @@index([memberId])
@@ -129,7 +129,7 @@ model Conversation {
   directMessages DirectMessage[]
 
   createdAt DateTime @default(now())
-  udpatedAt DateTime @updatedAt
+  updatedAt DateTime @updatedAt
 
   @@unique([memberOneId, memberTwoId])
   @@index([memberTwoId])
@@ -149,7 +149,7 @@ model DirectMessage {
   deleted Boolean @default(false)
 
   createdAt DateTime @default(now())
-  udpatedAt DateTime @updatedAt
+  updatedAt DateTime @updatedAt
 
   @@index([memberId])
   @@index([conversationId])
