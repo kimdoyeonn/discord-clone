@@ -159,6 +159,7 @@ export const ChatItem = ({
                 alt={content}
                 fill
                 className='object-cover'
+                loader={({ src }) => src}
               />
             </a>
           )}
