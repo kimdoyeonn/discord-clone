@@ -1,10 +1,11 @@
-import { currentUser, redirectToSignIn } from '@clerk/nextjs';
+import { currentUser } from '@clerk/nextjs';
 
 import { db } from '@/lib/db';
+import { redirectToSignIn } from './redirect-to-sign-in';
 
 export const initialProfile = async () => {
   const user = await currentUser();
-  console.log('hihi', process.env.NEXT_PUBLIC_CLERK_SIGN_IN_URL)
+
   if (!user) {
     return redirectToSignIn();
   }

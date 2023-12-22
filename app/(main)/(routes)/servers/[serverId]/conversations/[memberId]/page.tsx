@@ -5,7 +5,7 @@ import { MediaRoom } from '@/components/media-room';
 import { getOrCreateConversation } from '@/lib/conversation';
 import { currentProfile } from '@/lib/current-profile';
 import { db } from '@/lib/db';
-import { redirectToSignIn } from '@clerk/nextjs';
+import { redirectToSignIn } from '@/lib/redirect-to-sign-in';
 import { redirect } from 'next/navigation';
 
 interface MemberIdProps {

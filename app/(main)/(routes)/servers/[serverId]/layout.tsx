@@ -1,9 +1,9 @@
-import { redirectToSignIn } from '@clerk/nextjs';
 import { redirect } from 'next/navigation';
 
 import { currentProfile } from '@/lib/current-profile';
 import { db } from '@/lib/db';
 import { ServerSidebar } from '@/components/server/server-sidebar';
+import { redirectToSignIn } from '@/lib/redirect-to-sign-in';
 
 const ServerIdLayout = async ({
   children,
@@ -15,7 +15,7 @@ const ServerIdLayout = async ({
   const profile = await currentProfile();
 
   if (!profile) {
-    return redirectToSignIn;
+    return redirectToSignIn();
   }
 
   const server = await db.server.findUnique({

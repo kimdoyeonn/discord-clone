@@ -1,4 +1,3 @@
-import { redirectToSignIn } from '@clerk/nextjs';
 import { db } from '@/lib/db';
 import { redirect } from 'next/navigation';
 
@@ -8,6 +7,7 @@ import { ChatInput } from '@/components/chat/chat-input';
 import { ChatMessages } from '@/components/chat/chat-messages';
 import { ChannelType } from '@prisma/client';
 import { MediaRoom } from '@/components/media-room';
+import { redirectToSignIn } from '@/lib/redirect-to-sign-in';
 
 interface ChannelIdProps {
   params: {

@@ -1,8 +1,8 @@
-import { redirectToSignIn } from '@clerk/nextjs';
 import { redirect } from 'next/navigation';
 
 import { currentProfile } from '@/lib/current-profile';
 import { db } from '@/lib/db';
+import { redirectToSignIn } from '@/lib/redirect-to-sign-in';
 
 interface InviteCodePageProps {
   params: {
